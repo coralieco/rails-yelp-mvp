@@ -1,0 +1,16 @@
+<div class="container mycontainer">
+
+  <h1 class="text-center">Index des Restos</h1>
+
+
+  <% @restaurants.each do |restaurant| %>
+  <ul class="list-unstyled">
+    <li class="text-center"><i class="fa fa-cutlery" aria-hidden="true"></i>
+      <h3><%= link_to restaurant.name, restaurant_path(restaurant) %> </h3>
+      <%= restaurant.address %> - (<%= restaurant.phone_number %>)
+    </li>
+  </ul>
+  <% end %>
+
+ <p class="btn btn-danger"> <%= link_to "Add a restaurant", new_restaurant_path, class: 'btn btn-danger button-custo'%></p>
+</div>

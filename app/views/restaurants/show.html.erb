@@ -1,0 +1,37 @@
+<div class="container mycontainer text-center">
+
+  <h1>  <i class="fa fa-snowflake-o" aria-hidden="true"></i> <br> <%=  @restaurant.name %> </h1>
+  <h4><%=  @restaurant.address %> </h4>
+  <h4><%= @restaurant.phone_number %></h4>
+  <h4><%= @restaurant.category %></h4>
+
+
+  <div class="btn btn-danger "><%= link_to "Back to index", restaurants_path, class: 'button-custo'%></div>
+  <div class="btn btn-danger"><%= link_to "Edit", edit_restaurant_path, class: 'button-custo' %> </div>
+
+
+
+
+  <h1>Commentaires</h1>
+
+  <% @restaurant.reviews.each do |review| %>
+
+    <p> Your review : <%= review.content %></p>
+    <p> Your rating : <%= review.rating %></p>
+    <% end %>
+
+
+  <%= render '/reviews/new' %>
+
+
+</div>
+
+<script>
+  // sweetAlert("Awesome!");
+  $(document).ready(function() {
+    $("#new_review").on("submit", function(event) {
+      console.log("hello");
+      sweetAlert("Merci pour la review!");
+    });
+  })
+</script>

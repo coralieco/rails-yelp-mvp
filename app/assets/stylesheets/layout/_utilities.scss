@@ -1,0 +1,62 @@
+/* -------------------------------------
+ * Utilities classes
+ * These are examples of utilities classes
+ * Feel free to change them and create your own
+ * ------------------------------------- */
+
+// Paddings
+.padded {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+// Backgrounds
+.bg-black {
+  background: #4a4a4a;
+}
+.bg-grey {
+  background: #aeaeae;
+}
+.bg-blue {
+  background: #00a3e1;
+}
+.bg-dark-blue {
+  background: #3b5998;
+}
+
+.button-custo {
+  text-decoration:none;
+  color: white;
+}
+
+.button-custo:hover {
+  text-decoration:none;
+  color: white;
+}
+
+.mycontainer {
+  width: 700px;
+  font-size: 16px;
+  border: 2px solid #ff7e82;
+  text-decoration: none;
+}
+
+.mycontainer h1 {
+  color: #ff7e82;
+  font-family: 'Rancho', cursive;
+}
+
+.mycontainer h1 {
+  color: #ff7e82;
+  font-family: 'Rancho', cursive;
+}
+
+.mycontainer h3 {
+  font-family: 'Rancho', cursive;
+  color: black;
+}
+
+.small-wrapper {
+  // border: 1px dotted black;
+}
+

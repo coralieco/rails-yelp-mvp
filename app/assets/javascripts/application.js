@@ -11,6 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require sweetalert
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+// app/assets/javascripts/application.js
+
+
+
